@@ -7,7 +7,7 @@
       copy:
         src: "/var/snap/jenkins/4844/workspace/MavenAnsible-CICD/target/MavenAnsibleWebapp2.war"
         dest: "/opt/tomcat/webapps/MavenAnsibleWebapp2.war"
-        remote_src: no
+        remote_src: true
     - name:  Restart Tomcat
       systemd:
         name: tomcat
